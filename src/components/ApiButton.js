@@ -29,7 +29,7 @@ export default class ApiButton extends Component {
         {this.state.responses.map(res => (
           <div className="recipeNode">
               <div>{res.title}</div>
-              <img src={res.image} />
+              <img src={res.image}  alt="recipe" />
           </div>
         ))}
       </div>
