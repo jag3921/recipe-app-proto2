@@ -14,7 +14,7 @@ export default class ApiButton extends Component {
 
   
   getResponse = () => {
-    axios.get("/getRecipes/").then(response => {
+    axios.get("/getRecipes").then(response => {
       console.log(response.data);
       this.setState({
         responses: response.data
