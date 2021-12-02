@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
  res.send("Hello world");
 });
 
-app.get('/getRecipes/', (req, res) => {
+app.get('/getRecipes', (req, res) => {
  //   const word = req.params.word;
     const request = unirest.get(`https://api.spoonacular.com/recipes/complexSearch?query=pasta&maxFat=25&number=5&apiKey=${API_KEY}`)
     .then(response => {
