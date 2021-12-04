@@ -7,7 +7,8 @@ export default class ApiButton extends Component {
     super();
     this.state = {
       responses: [],
-      word: "Search for your favorite meal!"
+      word: "Search for your favorite meal!",
+      input: null
     };
 
   }
